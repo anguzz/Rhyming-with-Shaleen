@@ -30,9 +30,7 @@
 
 		<div class="page-wrapper">
 
-			<h1 class="neonText">
-				Shaleen the
-			  </h1>
+			
 			  
 			 
 						
@@ -50,6 +48,9 @@
 					{/each}
 				  </select>
 			  
+				  <h1 class="neonText">
+					Shaleen the
+				  </h1>
 				  <button on:click={handleRandomize} disabled={!selectedOption || loading}>
 					Randomize!
 				  </button>
@@ -57,6 +58,8 @@
 				  <div class="selected-option">
 					{#if selectedRandomOption && !loading}
 					<div class="content">
+
+						
 
 					  <h2 class="text_shadows">	{selectedRandomOption}</h2>
 					</div>	
