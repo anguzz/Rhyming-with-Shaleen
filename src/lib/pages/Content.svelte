@@ -26,11 +26,7 @@
   
   <section>
 	<Anchor id="content" />
-  <div
-	class="flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover page lg:bg-fixed bg-neutral-600 bg-blend-soft-light dark:bg-blend-soft-light dark:bg-neutral-700"
-	id="bg"
-  >
-
+ 
 
 		<div class="page-wrapper">
 
@@ -38,9 +34,7 @@
 				Shaleen the
 			  </h1>
 			  
-			  <div id="mcontainer">
-				<div id="monitor">
-				  <div id="monitorscreen">
+			 
 						
 					<select
 					bind:value={selectedOption}
@@ -81,9 +75,6 @@
 					{/if}
 
 
-				  </div>
-				</div>
-			  </div>
 
 
 		
@@ -97,9 +88,8 @@
 	#bg {
 	  width: 100%;
 	height: 100vh;
-	color: #fff;
-	background-image: url("/src/bricks.jpg");
-	background-size: 120% 120%;
+	color: rgba(211, 12, 12, 0.815);
+
 	position: relative;
 	
 	}
@@ -167,7 +157,7 @@
   .page-wrapper {
 	
     text-align: center;
-	color: #1F2937;
+	color: #87b3f2;
 	
 	border-radius:10px;
 	
@@ -348,76 +338,4 @@
 }
 
 
-
-/**============================monitor css ============================================*/
-
-
-
-#container {
-  max-width: 1024px;
-  margin: auto;
-}
-
-#monitor {
-	background: #000; 
-	position: relative;
-	border-top: 3px solid #888; 
-	margin: 5%;
-	padding: 2% 2% 4% 2%; 
-	border-radius: 10px; 
-	border-bottom-left-radius: 50% 2%; 
-	border-bottom-right-radius: 50% 2%; 
-	transition: margin-right 1s;
-}
-
-#monitor:after {
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: 3%;
-	left: 36%;
-	height: .5%; 
-	width: 28%;
-	background: #ddd; 
-	border-radius: 50%; 
-	box-shadow: 0 0 3px 0 white; 
-}
-
-#monitorscreen {
-	position: relative;
-  background-color: rgb(60, 61, 60);
-	background-size: cover; 
-	background-position: top center;
-	height: 0; 
-	padding-bottom: 56.25%; 
-	position: relative;
-	overflow: hidden;
-}
-
-
-@media all and (min-width: 960px) {
-	#monitor {
-		-webkit-animation: tvflicker .2s infinite alternate; 
-		-moz-animation:    tvflicker .5s infinite alternate; 
-		-o-animation:      tvflicker .5s infinite alternate; 
-		animation:         tvflicker .5s infinite alternate; 
-	}
-
-	@-webkit-keyframes tvflicker {
-	  0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
-	  100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
-	}
-	@-moz-keyframes tvflicker {
-	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
-	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
-	}
-	@-o-keyframes tvflicker {
-	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
-	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
-	}
-	@keyframes tvflicker {
-	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
-	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
-	}
-}
   </style>
