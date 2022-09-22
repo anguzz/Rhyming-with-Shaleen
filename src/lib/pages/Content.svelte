@@ -35,13 +35,13 @@
 		<div class="page-wrapper">
 
 			<h1 class="neonText">
-				-Go have some fun-
+				Shaleen the
 			  </h1>
 			  
 			  <div id="mcontainer">
 				<div id="monitor">
 				  <div id="monitorscreen">
-
+						
 					<select
 					bind:value={selectedOption}
 					on:change={() => {
@@ -63,6 +63,7 @@
 				  <div class="selected-option">
 					{#if selectedRandomOption && !loading}
 					<div class="content">
+
 					  <h2 class="text_shadows">	{selectedRandomOption}</h2>
 					</div>	
 					{/if}
