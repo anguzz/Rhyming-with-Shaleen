@@ -26,7 +26,7 @@
   
   <section>
 	<Anchor id="content" />
- 
+
 
 		<div class="page-wrapper">
 
@@ -157,7 +157,7 @@
   .page-wrapper {
 	
     text-align: center;
-	color: #87b3f2;
+	color: #1F2937;
 	
 	border-radius:10px;
 	
